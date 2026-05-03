@@ -74,7 +74,7 @@ export function RelatedBooks({ currentBookId }: RelatedBooksProps) {
                 </div>
               </div>
               <CardContent className="w-2/3 p-3">
-                <Badge className="mb-2 bg-pink-600 hover:bg-pink-700">{book.category}</Badge>
+                <Badge className="mb-2 bg-green-600 hover:bg-green-700">{book.category}</Badge>
                 <h3 className="font-bold line-clamp-1">{book.title}</h3>
                 <p className="text-sm text-muted-foreground">{book.author}</p>
               </CardContent>

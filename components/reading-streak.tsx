@@ -89,7 +89,7 @@ export function ReadingStreak() {
                 </Button>
               </div>
             </div>
-            <Button className="w-full bg-pink-600 hover:bg-pink-700">Lưu mục tiêu</Button>
+            <Button className="w-full bg-green-600 hover:bg-green-700">Lưu mục tiêu</Button>
           </div>
         ) : (
           <div className="space-y-6">
@@ -100,7 +100,7 @@ export function ReadingStreak() {
                     className={`${getFlameSize(streakData.currentStreak)} ${getFlameColor(streakData.currentStreak)}`}
                   />
                   {streakData.currentStreak >= 7 && (
-                    <div className="absolute -top-1 -right-1 bg-pink-600 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
+                    <div className="absolute -top-1 -right-1 bg-green-600 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
                       {streakData.multiplier}x
                     </div>
                   )}
@@ -155,7 +155,7 @@ export function ReadingStreak() {
                     <div
                       className={`h-8 w-8 rounded-full flex items-center justify-center ${
                         day
-                          ? "bg-pink-100 dark:bg-pink-900 text-pink-600"
+                          ? "bg-green-100 dark:bg-green-900 text-green-600"
                           : "bg-gray-100 dark:bg-gray-800 text-gray-400"
                       }`}
                     >
@@ -189,7 +189,7 @@ export function ReadingStreak() {
               </div>
             </div>
 
-            <Button className="w-full bg-pink-600 hover:bg-pink-700">
+            <Button className="w-full bg-green-600 hover:bg-green-700">
               <BookOpen className="mr-2 h-4 w-4" />
               Đọc sách ngay
             </Button>

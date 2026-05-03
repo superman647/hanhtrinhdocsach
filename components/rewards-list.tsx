@@ -120,7 +120,7 @@ export function RewardsList() {
     <div className="space-y-6">
       <div className="flex justify-between items-center">
         <h2 className="text-2xl font-bold">Danh sách phần quà</h2>
-        <div className="flex items-center gap-2 bg-pink-50 dark:bg-pink-900 px-4 py-2 rounded-full">
+        <div className="flex items-center gap-2 bg-green-50 dark:bg-green-900 px-4 py-2 rounded-full">
           <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
           <span className="font-bold">{points} điểm</span>
         </div>
@@ -139,7 +139,7 @@ export function RewardsList() {
             </div>
             <CardContent className="p-4 flex-grow">
               <div className="flex justify-between items-start mb-2">
-                <Badge className="bg-pink-600 hover:bg-pink-700">{reward.category}</Badge>
+                <Badge className="bg-green-600 hover:bg-green-700">{reward.category}</Badge>
                 <div className="flex items-center">
                   <Star className="h-4 w-4 text-yellow-500 fill-yellow-500 mr-1" />
                   <span className="text-sm font-bold">{reward.points}</span>
@@ -151,7 +151,7 @@ export function RewardsList() {
             </CardContent>
             <CardFooter className="p-4 pt-0">
               <Button
-                className="w-full bg-pink-600 hover:bg-pink-700"
+                className="w-full bg-green-600 hover:bg-green-700"
                 disabled={points < reward.points}
                 onClick={() => points >= reward.points && handleRedeemReward(reward)}
               >
@@ -183,7 +183,7 @@ export function RewardsList() {
             Điểm của bạn đã được trừ {selectedReward?.points} điểm. Số điểm hiện tại: {points} điểm.
           </p>
           <DialogFooter className="sm:justify-center">
-            <Button type="button" onClick={() => setShowDialog(false)} className="bg-pink-600 hover:bg-pink-700">
+            <Button type="button" onClick={() => setShowDialog(false)} className="bg-green-600 hover:bg-green-700">
               Đóng
             </Button>
           </DialogFooter>

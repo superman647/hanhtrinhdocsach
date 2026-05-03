@@ -54,7 +54,7 @@ export function FeaturedBooks() {
               />
             </div>
             <CardContent className="p-4">
-              <Badge className="mb-2 bg-pink-600 hover:bg-pink-700">{book.category}</Badge>
+              <Badge className="mb-2 bg-green-600 hover:bg-green-700">{book.category}</Badge>
               <h3 className="font-bold line-clamp-1">{book.title}</h3>
               <p className="text-sm text-muted-foreground">{book.author}</p>
               <p className="text-xs text-muted-foreground mt-2 line-clamp-2">{book.description}</p>

@@ -45,7 +45,7 @@ export function ReadingReminder() {
   }
 
   return (
-    <Card className="bg-gradient-to-r from-pink-50 to-purple-50 dark:from-pink-950 dark:to-purple-950 border-pink-100 dark:border-pink-900">
+    <Card className="bg-gradient-to-r from-green-50 to-purple-50 dark:from-green-950 dark:to-purple-950 border-green-100 dark:border-green-900">
       <CardContent className="p-6">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6">
           <div className="space-y-4">
@@ -54,7 +54,7 @@ export function ReadingReminder() {
                 <div className="relative">
                   <Flame className={`h-8 w-8 ${getFlameColor(streakData.currentStreak)}`} />
                   {streakData.currentStreak >= 7 && (
-                    <div className="absolute -top-1 -right-1 bg-pink-600 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
+                    <div className="absolute -top-1 -right-1 bg-green-600 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
                       {streakData.multiplier}x
                     </div>
                   )}
@@ -80,7 +80,7 @@ export function ReadingReminder() {
                   </Tooltip>
                 </TooltipProvider>
 
-                <Button className="bg-pink-600 hover:bg-pink-700">
+                <Button className="bg-green-600 hover:bg-green-700">
                   <BookOpen className="h-4 w-4 mr-2" />
                   Đọc sách ngay
                 </Button>
@@ -91,7 +91,7 @@ export function ReadingReminder() {
               <div className="space-y-1">
                 <div className="flex justify-between text-sm">
                   <div className="flex items-center">
-                    <Clock className="h-4 w-4 mr-1 text-pink-600" />
+                    <Clock className="h-4 w-4 mr-1 text-green-600" />
                     <span>
                       Hôm nay: {streakData.todayProgress}/{streakData.dailyGoal} phút
                     </span>
@@ -106,7 +106,7 @@ export function ReadingReminder() {
               <div className="space-y-1">
                 <div className="flex justify-between text-sm">
                   <div className="flex items-center">
-                    <Calendar className="h-4 w-4 mr-1 text-pink-600" />
+                    <Calendar className="h-4 w-4 mr-1 text-green-600" />
                     <span>
                       Tuần này: {streakData.weeklyProgress}/{streakData.weeklyGoal} ngày
                     </span>
@@ -118,12 +118,12 @@ export function ReadingReminder() {
             </div>
 
             {showReminders && (
-              <div className="bg-white dark:bg-gray-800 rounded-lg p-4 mt-4 border border-pink-100 dark:border-pink-900">
+              <div className="bg-white dark:bg-gray-800 rounded-lg p-4 mt-4 border border-green-100 dark:border-green-900">
                 <h4 className="font-medium text-sm mb-3">Nhắc nhở thói quen đọc sách</h4>
                 <div className="space-y-3">
                   <div className="flex items-start gap-2">
-                    <div className="bg-pink-100 dark:bg-pink-900 p-1 rounded-full">
-                      <Clock className="h-4 w-4 text-pink-600" />
+                    <div className="bg-green-100 dark:bg-green-900 p-1 rounded-full">
+                      <Clock className="h-4 w-4 text-green-600" />
                     </div>
                     <div>
                       <p className="text-sm font-medium">Mục tiêu hàng ngày</p>
@@ -133,8 +133,8 @@ export function ReadingReminder() {
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
-                    <div className="bg-pink-100 dark:bg-pink-900 p-1 rounded-full">
-                      <Calendar className="h-4 w-4 text-pink-600" />
+                    <div className="bg-green-100 dark:bg-green-900 p-1 rounded-full">
+                      <Calendar className="h-4 w-4 text-green-600" />
                     </div>
                     <div>
                       <p className="text-sm font-medium">Mục tiêu hàng tuần</p>
@@ -144,8 +144,8 @@ export function ReadingReminder() {
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
-                    <div className="bg-pink-100 dark:bg-pink-900 p-1 rounded-full">
-                      <Flame className="h-4 w-4 text-pink-600" />
+                    <div className="bg-green-100 dark:bg-green-900 p-1 rounded-full">
+                      <Flame className="h-4 w-4 text-green-600" />
                     </div>
                     <div>
                       <p className="text-sm font-medium">Duy trì chuỗi ngày đọc</p>
@@ -166,7 +166,7 @@ export function ReadingReminder() {
                 <div key={index} className="flex items-center gap-2">
                   <div
                     className={`h-6 w-6 rounded-full flex items-center justify-center ${
-                      day ? "bg-pink-100 dark:bg-pink-900 text-pink-600" : "bg-gray-100 dark:bg-gray-800 text-gray-400"
+                      day ? "bg-green-100 dark:bg-green-900 text-green-600" : "bg-gray-100 dark:bg-gray-800 text-gray-400"
                     }`}
                   >
                     {day ? <BookOpen className="h-3 w-3" /> : <span className="text-xs">-</span>}

@@ -107,11 +107,11 @@ export function BookQuiz({ bookId, quiz, points }: BookQuizProps) {
       </CardContent>
       <CardFooter className="flex justify-between">
         {!showResult ? (
-          <Button onClick={handleSubmit} disabled={!selectedAnswer} className="w-full bg-pink-600 hover:bg-pink-700">
+          <Button onClick={handleSubmit} disabled={!selectedAnswer} className="w-full bg-green-600 hover:bg-green-700">
             Kiểm tra
           </Button>
         ) : (
-          <Button onClick={handleNext} className="w-full bg-pink-600 hover:bg-pink-700">
+          <Button onClick={handleNext} className="w-full bg-green-600 hover:bg-green-700">
             {currentQuestion < quiz.length - 1 ? "Câu tiếp theo" : "Hoàn thành"}
           </Button>
         )}

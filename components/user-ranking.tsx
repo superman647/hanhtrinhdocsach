@@ -29,7 +29,7 @@ export function UserRanking() {
     { name: "Kiệt tướng tri thức", color: "bg-yellow-500" },
     { name: "Thần đồng đọc sách", color: "bg-orange-500" },
     { name: "Bậc thầy văn chương", color: "bg-red-500" },
-    { name: "Huyền thoại tri thức", color: "bg-pink-600" },
+    { name: "Huyền thoại tri thức", color: "bg-green-600" },
   ]
 
   // Find current rank color
@@ -46,13 +46,13 @@ export function UserRanking() {
                 <p className="text-muted-foreground">
                   Vị trí hiện tại: #{currentUser.position} / {currentUser.totalUsers}
                 </p>
-                <Badge variant="outline" className="text-pink-600 border-pink-600">
+                <Badge variant="outline" className="text-green-600 border-green-600">
                   Top {currentUser.percentile}%
                 </Badge>
               </div>
             </div>
             <Link href="/leaderboard/achievements">
-              <Button className="bg-pink-600 hover:bg-pink-700">
+              <Button className="bg-green-600 hover:bg-green-700">
                 <Trophy className="mr-2 h-4 w-4" />
                 Xem thành tích
               </Button>
@@ -73,7 +73,7 @@ export function UserRanking() {
                 <span className="font-medium">{currentUser.nextRank}</span>
               </span>
               <span className="text-muted-foreground">
-                <Award className="inline-block h-4 w-4 mr-1 text-pink-600" />
+                <Award className="inline-block h-4 w-4 mr-1 text-green-600" />
                 {currentUser.booksRead} sách đã đọc
               </span>
             </div>
@@ -84,15 +84,15 @@ export function UserRanking() {
           <h3 className="font-medium">Cách tăng điểm nhanh</h3>
           <ul className="space-y-2 text-sm">
             <li className="flex items-start gap-2">
-              <BookOpen className="h-4 w-4 text-pink-600 mt-0.5 shrink-0" />
+              <BookOpen className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
               <span>Hoàn thành thử thách "Đọc 5 ngày liên tiếp" (+50 điểm)</span>
             </li>
             <li className="flex items-start gap-2">
-              <BookOpen className="h-4 w-4 text-pink-600 mt-0.5 shrink-0" />
+              <BookOpen className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
               <span>Đọc xong "Truyện Kiều" và vượt qua bài kiểm tra (+30 điểm)</span>
             </li>
             <li className="flex items-start gap-2">
-              <BookOpen className="h-4 w-4 text-pink-600 mt-0.5 shrink-0" />
+              <BookOpen className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
               <span>Viết đánh giá cho 3 cuốn sách đã đọc (+15 điểm)</span>
             </li>
           </ul>

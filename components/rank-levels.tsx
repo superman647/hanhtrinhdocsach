@@ -11,7 +11,7 @@ export function RankLevels() {
     { id: 4, name: "Kiệt tướng tri thức", minPoints: 3000, maxPoints: 5000, color: "bg-yellow-500" },
     { id: 5, name: "Thần đồng đọc sách", minPoints: 5000, maxPoints: 8000, color: "bg-orange-500" },
     { id: 6, name: "Bậc thầy văn chương", minPoints: 8000, maxPoints: 12000, color: "bg-red-500" },
-    { id: 7, name: "Huyền thoại tri thức", minPoints: 12000, maxPoints: null, color: "bg-pink-600" },
+    { id: 7, name: "Huyền thoại tri thức", minPoints: 12000, maxPoints: null, color: "bg-green-600" },
   ]
 
   // Current user points
@@ -75,7 +75,7 @@ export function RankLevels() {
                 <div className={`h-3 w-3 rounded-full ${rank.color}`}></div>
                 <div className="flex-1 text-sm">
                   {rank.name}
-                  {currentRank?.id === rank.id && <span className="ml-2 text-xs text-pink-600">(Hiện tại)</span>}
+                  {currentRank?.id === rank.id && <span className="ml-2 text-xs text-green-600">(Hiện tại)</span>}
                 </div>
                 <div className="text-xs text-muted-foreground">
                   {rank.maxPoints === null ? `${rank.minPoints}+ điểm` : `${rank.minPoints} - ${rank.maxPoints} điểm`}

@@ -61,7 +61,7 @@ export function AvatarSelection({ selectedAvatar, setSelectedAvatar }: AvatarSel
           <Label
             htmlFor={avatar.id}
             className={`relative cursor-pointer rounded-full overflow-hidden border-2 ${
-              selectedAvatar === avatar.id ? "border-pink-600" : "border-transparent hover:border-muted"
+              selectedAvatar === avatar.id ? "border-green-600" : "border-transparent hover:border-muted"
             }`}
           >
             <Image

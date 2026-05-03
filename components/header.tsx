@@ -72,7 +72,7 @@ export function Header() {
           </SheetTrigger>
           <SheetContent side="left" className="pr-0">
             <Link href="/" className="flex items-center" onClick={() => setIsOpen(false)}>
-              <BookOpen className="mr-2 h-6 w-6 text-amber-600" />
+              <BookOpen className="mr-2 h-6 w-6 text-green-600" />
               <span className="font-bold">Hành trình đọc sách</span>
             </Link>
             <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
@@ -120,7 +120,7 @@ export function Header() {
                       </Button>
                     </Link>
                     <Link href="/register" onClick={() => setIsOpen(false)}>
-                      <Button className="w-full justify-start bg-amber-600 hover:bg-amber-700">
+                      <Button className="w-full justify-start bg-green-600 hover:bg-green-700">
                         <User className="mr-2 h-4 w-4" />
                         Đăng ký
                       </Button>
@@ -132,9 +132,9 @@ export function Header() {
           </SheetContent>
         </Sheet>
         <Link href="/" className="flex items-center">
-          <BookOpen className="mr-2 h-6 w-6 text-amber-600" />
+          <BookOpen className="mr-2 h-6 w-6 text-green-600" />
           <span className="hidden font-bold sm:inline-block">Hành trình đọc sách</span>
-          <span className="font-bold sm:hidden">HTĐ</span>
+          <span className="font-bold sm:hidden">Hành trình</span>
         </Link>
         <nav className="hidden gap-6 md:flex md:ml-10">
           {routes.map((route) => (
@@ -199,7 +199,7 @@ export function Header() {
                 </Button>
               </Link>
               <Link href="/register">
-                <Button size="sm" className="bg-amber-600 hover:bg-amber-700">
+                <Button size="sm" className="bg-green-600 hover:bg-green-700">
                   Đăng ký
                 </Button>
               </Link>

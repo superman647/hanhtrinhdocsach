@@ -90,7 +90,7 @@ export function UserBooks() {
                   <div className="flex flex-col h-full justify-between">
                     <div>
                       <div className="flex justify-between items-start mb-2">
-                        <Badge className="bg-pink-600 hover:bg-pink-700">{book.category}</Badge>
+                        <Badge className="bg-green-600 hover:bg-green-700">{book.category}</Badge>
                         <span className="text-xs text-muted-foreground">Đọc gần đây: {book.lastReadDate}</span>
                       </div>
                       <h3 className="font-bold text-lg">{book.title}</h3>
@@ -111,7 +111,7 @@ export function UserBooks() {
                         </Button>
                       </Link>
                       <Link href={`/books/${book.id}/read`} className="flex-1">
-                        <Button className="w-full bg-pink-600 hover:bg-pink-700">
+                        <Button className="w-full bg-green-600 hover:bg-green-700">
                           <BookOpen className="h-4 w-4 mr-2" />
                           Tiếp tục đọc
                         </Button>
@@ -138,7 +138,7 @@ export function UserBooks() {
                   <div className="flex flex-col h-full justify-between">
                     <div>
                       <div className="flex justify-between items-start mb-2">
-                        <Badge className="bg-pink-600 hover:bg-pink-700">{book.category}</Badge>
+                        <Badge className="bg-green-600 hover:bg-green-700">{book.category}</Badge>
                         <div className="flex items-center">
                           {[...Array(5)].map((_, i) => (
                             <Star

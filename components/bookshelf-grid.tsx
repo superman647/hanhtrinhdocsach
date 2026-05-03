@@ -148,7 +148,7 @@ export function BookshelfGrid() {
             </div>
             <CardContent className="p-4 flex-grow flex flex-col">
               <div className="flex justify-between items-start mb-2">
-                <Badge className="bg-pink-600 hover:bg-pink-700">{book.category}</Badge>
+                <Badge className="bg-green-600 hover:bg-green-700">{book.category}</Badge>
                 {book.status === "completed" && (
                   <div className="flex items-center">
                     {[...Array(5)].map((_, i) => (
@@ -181,7 +181,7 @@ export function BookshelfGrid() {
                   </Button>
                 </Link>
                 <Link href={`/books/${book.id}/read`} className="flex-1">
-                  <Button className="w-full bg-pink-600 hover:bg-pink-700">
+                  <Button className="w-full bg-green-600 hover:bg-green-700">
                     <BookOpen className="h-4 w-4 mr-2" />
                     {book.status === "reading" ? "Tiếp tục" : "Đọc sách"}
                   </Button>

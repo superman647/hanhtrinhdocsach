@@ -17,7 +17,7 @@ export function LeaderboardTable() {
     "Kiệt tướng tri thức": "bg-yellow-500",
     "Thần đồng đọc sách": "bg-orange-500",
     "Bậc thầy văn chương": "bg-red-500",
-    "Huyền thoại tri thức": "bg-pink-600",
+    "Huyền thoại tri thức": "bg-green-600",
   }
 
   // Mock data for leaderboard

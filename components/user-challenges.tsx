@@ -13,7 +13,7 @@ export function UserChallenges() {
       id: 1,
       title: "Đọc một truyện ngắn",
       description: "Hoàn thành việc đọc một truyện ngắn trong tuần này",
-      icon: <BookOpen className="h-8 w-8 text-pink-600" />,
+      icon: <BookOpen className="h-8 w-8 text-green-600" />,
       progress: 0,
       reward: "10 điểm",
       deadline: "7 ngày",
@@ -24,7 +24,7 @@ export function UserChallenges() {
       id: 2,
       title: "Đọc 5 ngày liên tiếp",
       description: "Đọc sách ít nhất 15 phút mỗi ngày trong 5 ngày liên tiếp",
-      icon: <Calendar className="h-8 w-8 text-pink-600" />,
+      icon: <Calendar className="h-8 w-8 text-green-600" />,
       progress: 40,
       reward: "50 điểm",
       deadline: "5 ngày",
@@ -35,7 +35,7 @@ export function UserChallenges() {
       id: 3,
       title: "Hoàn thành 100 trang",
       description: "Đọc tổng cộng 100 trang sách trong tuần này",
-      icon: <Clock className="h-8 w-8 text-pink-600" />,
+      icon: <Clock className="h-8 w-8 text-green-600" />,
       progress: 65,
       reward: "30 điểm",
       deadline: "3 ngày",
@@ -50,7 +50,7 @@ export function UserChallenges() {
       id: 4,
       title: "Đọc sách 3 ngày liên tiếp",
       description: "Đọc sách ít nhất 15 phút mỗi ngày trong 3 ngày liên tiếp",
-      icon: <Calendar className="h-8 w-8 text-pink-600" />,
+      icon: <Calendar className="h-8 w-8 text-green-600" />,
       reward: "20 điểm",
       completedDate: "15/04/2023",
       difficulty: "Dễ",
@@ -60,7 +60,7 @@ export function UserChallenges() {
       id: 5,
       title: "Hoàn thành 50 trang",
       description: "Đọc tổng cộng 50 trang sách trong tuần",
-      icon: <Clock className="h-8 w-8 text-pink-600" />,
+      icon: <Clock className="h-8 w-8 text-green-600" />,
       reward: "15 điểm",
       completedDate: "10/04/2023",
       difficulty: "Dễ",
@@ -70,7 +70,7 @@ export function UserChallenges() {
       id: 6,
       title: "Đọc một tác phẩm thơ",
       description: "Hoàn thành việc đọc một tác phẩm thơ",
-      icon: <BookOpen className="h-8 w-8 text-pink-600" />,
+      icon: <BookOpen className="h-8 w-8 text-green-600" />,
       reward: "25 điểm",
       completedDate: "05/04/2023",
       difficulty: "Dễ",
@@ -89,7 +89,7 @@ export function UserChallenges() {
           {activeChallenge.map((challenge) => (
             <Card key={challenge.id} className="flex flex-col">
               <CardContent className="flex flex-col items-center p-6">
-                <div className="mb-4 rounded-full bg-pink-100 p-3 dark:bg-pink-900">{challenge.icon}</div>
+                <div className="mb-4 rounded-full bg-green-100 p-3 dark:bg-green-900">{challenge.icon}</div>
                 <div className="flex items-center gap-2 mb-2">
                   <Badge
                     variant="outline"
@@ -103,7 +103,7 @@ export function UserChallenges() {
                   >
                     {challenge.difficulty}
                   </Badge>
-                  <Badge className="bg-pink-600 hover:bg-pink-700">{challenge.category}</Badge>
+                  <Badge className="bg-green-600 hover:bg-green-700">{challenge.category}</Badge>
                 </div>
                 <h3 className="text-xl font-bold text-center">{challenge.title}</h3>
                 <p className="text-sm text-muted-foreground text-center mt-2">{challenge.description}</p>
@@ -146,7 +146,7 @@ export function UserChallenges() {
                   >
                     {challenge.difficulty}
                   </Badge>
-                  <Badge className="bg-pink-600 hover:bg-pink-700">{challenge.category}</Badge>
+                  <Badge className="bg-green-600 hover:bg-green-700">{challenge.category}</Badge>
                 </div>
                 <h3 className="text-xl font-bold text-center">{challenge.title}</h3>
                 <p className="text-sm text-muted-foreground text-center mt-2">{challenge.description}</p>

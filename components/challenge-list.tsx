@@ -12,7 +12,7 @@ export function ChallengeList() {
       id: 1,
       title: "Đọc một truyện ngắn",
       description: "Hoàn thành việc đọc một truyện ngắn trong tuần này",
-      icon: <BookOpen className="h-8 w-8 text-pink-600" />,
+      icon: <BookOpen className="h-8 w-8 text-green-600" />,
       progress: 0,
       reward: "10 điểm",
       deadline: "7 ngày",
@@ -26,7 +26,7 @@ export function ChallengeList() {
       id: 2,
       title: "Đọc 5 ngày liên tiếp",
       description: "Đọc sách ít nhất 15 phút mỗi ngày trong 5 ngày liên tiếp",
-      icon: <Calendar className="h-8 w-8 text-pink-600" />,
+      icon: <Calendar className="h-8 w-8 text-green-600" />,
       progress: 40,
       reward: "50 điểm",
       deadline: "5 ngày",
@@ -40,7 +40,7 @@ export function ChallengeList() {
       id: 3,
       title: "Hoàn thành 100 trang",
       description: "Đọc tổng cộng 100 trang sách trong tuần này",
-      icon: <Clock className="h-8 w-8 text-pink-600" />,
+      icon: <Clock className="h-8 w-8 text-green-600" />,
       progress: 65,
       reward: "30 điểm",
       deadline: "3 ngày",
@@ -54,7 +54,7 @@ export function ChallengeList() {
       id: 4,
       title: "Đọc một tác phẩm cổ điển",
       description: "Hoàn thành việc đọc một tác phẩm văn học cổ điển trước năm 1975",
-      icon: <Award className="h-8 w-8 text-pink-600" />,
+      icon: <Award className="h-8 w-8 text-green-600" />,
       progress: 25,
       reward: "100 điểm",
       deadline: "14 ngày",
@@ -68,7 +68,7 @@ export function ChallengeList() {
       id: 5,
       title: "Viết đánh giá sau khi đọc xong sách",
       description: "Hoàn thành việc đọc một cuốn sách và viết đánh giá chi tiết",
-      icon: <Star className="h-8 w-8 text-pink-600" />,
+      icon: <Star className="h-8 w-8 text-green-600" />,
       progress: 10,
       reward: "40 điểm",
       deadline: "10 ngày",
@@ -82,7 +82,7 @@ export function ChallengeList() {
       id: 6,
       title: "Đọc 3 cuốn sách cùng tác giả",
       description: "Hoàn thành việc đọc 3 cuốn sách của cùng một tác giả",
-      icon: <BookOpen className="h-8 w-8 text-pink-600" />,
+      icon: <BookOpen className="h-8 w-8 text-green-600" />,
       progress: 33,
       reward: "80 điểm",
       deadline: "30 ngày",
@@ -96,7 +96,7 @@ export function ChallengeList() {
       id: 7,
       title: "Đọc sách 10 ngày liên tiếp",
       description: "Đọc sách ít nhất 30 phút mỗi ngày trong 10 ngày liên tiếp",
-      icon: <Calendar className="h-8 w-8 text-pink-600" />,
+      icon: <Calendar className="h-8 w-8 text-green-600" />,
       progress: 20,
       reward: "100 điểm",
       deadline: "8 ngày còn lại",
@@ -110,7 +110,7 @@ export function ChallengeList() {
       id: 8,
       title: "Hoàn thành 500 trang",
       description: "Đọc tổng cộng 500 trang sách trong tháng này",
-      icon: <Clock className="h-8 w-8 text-pink-600" />,
+      icon: <Clock className="h-8 w-8 text-green-600" />,
       progress: 45,
       reward: "150 điểm",
       deadline: "15 ngày",
@@ -139,7 +139,7 @@ export function ChallengeList() {
         {challenges.map((challenge) => (
           <Card key={challenge.id} className="flex flex-col">
             <CardContent className="flex flex-col items-center p-6">
-              <div className="mb-4 rounded-full bg-pink-100 p-3 dark:bg-pink-900">{challenge.icon}</div>
+              <div className="mb-4 rounded-full bg-green-100 p-3 dark:bg-green-900">{challenge.icon}</div>
               <div className="flex items-center gap-2 mb-2">
                 <Badge
                   variant="outline"
@@ -153,7 +153,7 @@ export function ChallengeList() {
                 >
                   {challenge.difficulty}
                 </Badge>
-                <Badge className="bg-pink-600 hover:bg-pink-700">{challenge.category}</Badge>
+                <Badge className="bg-green-600 hover:bg-green-700">{challenge.category}</Badge>
               </div>
               <h3 className="text-xl font-bold text-center">{challenge.title}</h3>
               <p className="text-sm text-muted-foreground text-center mt-2">{challenge.description}</p>
@@ -171,7 +171,7 @@ export function ChallengeList() {
             </CardContent>
             <CardFooter className="pt-0 mt-auto">
               <Link href={challenge.path} className="w-full">
-                <Button className="w-full bg-pink-600 hover:bg-pink-700">Bắt đầu thử thách</Button>
+                <Button className="w-full bg-green-600 hover:bg-green-700">Bắt đầu thử thách</Button>
               </Link>
             </CardFooter>
           </Card>

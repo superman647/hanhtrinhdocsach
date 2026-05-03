@@ -131,7 +131,7 @@ export function BookList() {
             </div>
             <CardContent className="p-4 flex flex-col flex-grow">
               <div className="flex justify-between items-start mb-2">
-                <Badge className="bg-pink-600 hover:bg-pink-700">{book.category}</Badge>
+                <Badge className="bg-green-600 hover:bg-green-700">{book.category}</Badge>
                 <div className="flex items-center">
                   <Star className="h-4 w-4 text-yellow-500 fill-yellow-500 mr-1" />
                   <span className="text-sm">{book.rating}</span>
@@ -147,7 +147,7 @@ export function BookList() {
                   </Button>
                 </Link>
                 <Link href={`/books/${book.id}/read`} className="flex-1">
-                  <Button className="w-full bg-pink-600 hover:bg-pink-700">
+                  <Button className="w-full bg-green-600 hover:bg-green-700">
                     <BookOpen className="h-4 w-4 mr-2" />
                     Đọc sách
                   </Button>

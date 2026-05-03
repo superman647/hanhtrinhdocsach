@@ -8,10 +8,10 @@ export function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
           <div className="space-y-4">
             <Link href="/" className="flex items-center">
-              <BookOpen className="mr-2 h-6 w-6 text-amber-600" />
+              <BookOpen className="mr-2 h-6 w-6 text-green-600" />
               <span className="font-bold">Hành trình đọc sách</span>
             </Link>
-            <p className="text-sm text-muted-foreground">Hành trình đọc sách cùng cộng đồng</p>
+            <p className="text-sm text-muted-foreground">Thử thách đọc sách - Khám phá văn học Việt Nam</p>
             <div className="flex space-x-4">
               <Link href="#" className="text-muted-foreground hover:text-foreground">
                 <Facebook className="h-5 w-5" />

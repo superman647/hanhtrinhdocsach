@@ -27,7 +27,7 @@ export function UserPoints() {
               <h2 className="text-xl font-bold">Điểm thưởng của bạn</h2>
               <p className="text-muted-foreground">Dùng điểm để đổi những phần quà hấp dẫn</p>
             </div>
-            <Button className="bg-pink-600 hover:bg-pink-700">
+            <Button className="bg-green-600 hover:bg-green-700">
               <Gift className="mr-2 h-4 w-4" />
               Đổi quà ngay
             </Button>
@@ -68,21 +68,21 @@ export function UserPoints() {
           <ul className="space-y-2 text-sm">
             <li className="flex items-start justify-between gap-2">
               <div className="flex items-start gap-2">
-                <Star className="h-4 w-4 text-pink-600 mt-0.5 shrink-0" />
+                <Star className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                 <span>Hoàn thành thử thách "Đọc một truyện ngắn"</span>
               </div>
               <span className="text-green-600 font-medium">+10</span>
             </li>
             <li className="flex items-start justify-between gap-2">
               <div className="flex items-start gap-2">
-                <Star className="h-4 w-4 text-pink-600 mt-0.5 shrink-0" />
+                <Star className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                 <span>Đọc sách 3 ngày liên tiếp</span>
               </div>
               <span className="text-green-600 font-medium">+20</span>
             </li>
             <li className="flex items-start justify-between gap-2">
               <div className="flex items-start gap-2">
-                <Star className="h-4 w-4 text-pink-600 mt-0.5 shrink-0" />
+                <Star className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                 <span>Đổi quà "Móc khóa sách mini"</span>
               </div>
               <span className="text-red-600 font-medium">-50</span>

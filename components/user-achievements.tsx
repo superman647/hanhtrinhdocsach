@@ -103,7 +103,7 @@ export function UserAchievements() {
           {unlockedAchievements.map((achievement) => (
             <Card key={achievement.id} className="overflow-hidden">
               <CardContent className="p-6 flex flex-col items-center text-center">
-                <div className="mb-4 rounded-full bg-pink-100 p-3 dark:bg-pink-900">
+                <div className="mb-4 rounded-full bg-green-100 p-3 dark:bg-green-900">
                   <div className="relative h-16 w-16">
                     <Image
                       src={achievement.imageUrl || "/placeholder.svg"}
@@ -113,7 +113,7 @@ export function UserAchievements() {
                     />
                   </div>
                 </div>
-                <Badge className="mb-2 bg-pink-600 hover:bg-pink-700">{achievement.category}</Badge>
+                <Badge className="mb-2 bg-green-600 hover:bg-green-700">{achievement.category}</Badge>
                 <h3 className="font-bold text-lg">{achievement.title}</h3>
                 <p className="text-sm text-muted-foreground mt-1">{achievement.description}</p>
                 <p className="text-xs text-muted-foreground mt-4">Mở khóa ngày: {achievement.unlockedDate}</p>
