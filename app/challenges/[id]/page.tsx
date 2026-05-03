@@ -90,8 +90,8 @@ export default function ChallengeDetailPage({ params }: { params: { id: string }
         <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8">
           <div className="space-y-6">
             <div className="flex flex-col md:flex-row gap-4 items-start md:items-center">
-              <div className="rounded-full bg-pink-100 p-4 dark:bg-pink-900">
-                {challenge.icon || <Award className="h-10 w-10 text-pink-600" />}
+              <div className="rounded-full bg-green-100 p-4 dark:bg-green-900">
+                {challenge.icon || <Award className="h-10 w-10 text-green-600" />}
               </div>
               <div>
                 <div className="flex flex-wrap gap-2 mb-2">
@@ -107,7 +107,7 @@ export default function ChallengeDetailPage({ params }: { params: { id: string }
                   >
                     {challenge.difficulty}
                   </Badge>
-                  <Badge className="bg-pink-600 hover:bg-pink-700">{challenge.category}</Badge>
+                  <Badge className="bg-green-600 hover:bg-green-700">{challenge.category}</Badge>
                 </div>
                 <h1 className="text-3xl font-bold">{challenge.title}</h1>
                 <p className="text-muted-foreground mt-2">{challenge.description}</p>
@@ -148,7 +148,7 @@ export default function ChallengeDetailPage({ params }: { params: { id: string }
                           <div className="flex flex-col h-full justify-between">
                             <div>
                               <div className="flex justify-between items-start mb-2">
-                                <Badge className="bg-pink-600 hover:bg-pink-700">{book.category}</Badge>
+                                <Badge className="bg-green-600 hover:bg-green-700">{book.category}</Badge>
                                 <div className="flex items-center">
                                   <Star className="h-4 w-4 text-yellow-500 fill-yellow-500 mr-1" />
                                   <span className="text-sm">{book.rating}</span>
@@ -172,7 +172,7 @@ export default function ChallengeDetailPage({ params }: { params: { id: string }
                                 </Button>
                               </Link>
                               <Link href={`/books/${book.id}/read`} className="flex-1">
-                                <Button className="w-full bg-pink-600 hover:bg-pink-700">
+                                <Button className="w-full bg-green-600 hover:bg-green-700">
                                   <BookOpen className="h-4 w-4 mr-2" />
                                   {book.progress > 0 ? "Tiếp tục đọc" : "Bắt đầu đọc"}
                                 </Button>
@@ -224,15 +224,15 @@ export default function ChallengeDetailPage({ params }: { params: { id: string }
                 <h3 className="font-bold text-lg mb-4">Mẹo hoàn thành</h3>
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-start gap-2">
-                    <BookOpen className="h-4 w-4 text-pink-600 mt-0.5 shrink-0" />
+                    <BookOpen className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                     <span>Đọc sách mỗi ngày ít nhất 15 phút</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <BookOpen className="h-4 w-4 text-pink-600 mt-0.5 shrink-0" />
+                    <BookOpen className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                     <span>Đặt lịch đọc sách vào cùng một thời điểm mỗi ngày</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <BookOpen className="h-4 w-4 text-pink-600 mt-0.5 shrink-0" />
+                    <BookOpen className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                     <span>Sử dụng tính năng đánh dấu để dễ dàng quay lại</span>
                   </li>
                 </ul>
@@ -241,13 +241,13 @@ export default function ChallengeDetailPage({ params }: { params: { id: string }
 
             {isReviewChallenge ? (
               <Link href="/challenges/review">
-                <Button className="w-full bg-pink-600 hover:bg-pink-700">
+                <Button className="w-full bg-green-600 hover:bg-green-700">
                   <Star className="h-4 w-4 mr-2" />
                   Viết đánh giá sách
                 </Button>
               </Link>
             ) : (
-              <Button className="w-full bg-pink-600 hover:bg-pink-700">
+              <Button className="w-full bg-green-600 hover:bg-green-700">
                 <Award className="h-4 w-4 mr-2" />
                 Bắt đầu thử thách
               </Button>
@@ -266,7 +266,7 @@ const challenges = [
     id: 1,
     title: "Đọc một truyện ngắn",
     description: "Hoàn thành việc đọc một truyện ngắn trong tuần này",
-    icon: <BookOpen className="h-8 w-8 text-pink-600" />,
+    icon: <BookOpen className="h-8 w-8 text-green-600" />,
     progress: 0,
     reward: "10 điểm",
     deadline: "7 ngày",
@@ -279,7 +279,7 @@ const challenges = [
     id: 2,
     title: "Đọc 5 ngày liên tiếp",
     description: "Đọc sách ít nhất 15 phút mỗi ngày trong 5 ngày liên tiếp",
-    icon: <Calendar className="h-8 w-8 text-pink-600" />,
+    icon: <Calendar className="h-8 w-8 text-green-600" />,
     progress: 40,
     reward: "50 điểm",
     deadline: "5 ngày",
@@ -292,7 +292,7 @@ const challenges = [
     id: 3,
     title: "Hoàn thành 100 trang",
     description: "Đọc tổng cộng 100 trang sách trong tuần này",
-    icon: <Clock className="h-8 w-8 text-pink-600" />,
+    icon: <Clock className="h-8 w-8 text-green-600" />,
     progress: 65,
     reward: "30 điểm",
     deadline: "3 ngày",
@@ -305,7 +305,7 @@ const challenges = [
     id: 4,
     title: "Đọc một tác phẩm cổ điển",
     description: "Hoàn thành việc đọc một tác phẩm văn học cổ điển trước năm 1975",
-    icon: <Award className="h-8 w-8 text-pink-600" />,
+    icon: <Award className="h-8 w-8 text-green-600" />,
     progress: 25,
     reward: "100 điểm",
     deadline: "14 ngày",
@@ -319,7 +319,7 @@ const challenges = [
     id: 5,
     title: "Viết đánh giá sau khi đọc xong sách",
     description: "Hoàn thành việc đọc một cuốn sách và viết đánh giá chi tiết",
-    icon: <Star className="h-8 w-8 text-pink-600" />,
+    icon: <Star className="h-8 w-8 text-green-600" />,
     progress: 10,
     reward: "40 điểm",
     deadline: "10 ngày",

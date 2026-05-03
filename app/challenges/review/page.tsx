@@ -154,7 +154,7 @@ export default function WriteReviewPage() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-pink-600 hover:bg-pink-700"
+                    className="w-full bg-green-600 hover:bg-green-700"
                     disabled={review.length < minChars || !selectedBook || rating === 0}
                   >
                     Gửi đánh giá
@@ -189,19 +189,19 @@ export default function WriteReviewPage() {
                 <h3 className="font-bold text-lg mb-4">Hướng dẫn viết đánh giá</h3>
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-start gap-2">
-                    <BookOpen className="h-4 w-4 text-pink-600 mt-0.5 shrink-0" />
+                    <BookOpen className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                     <span>Chia sẻ cảm nhận chân thực của bạn về cuốn sách</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <BookOpen className="h-4 w-4 text-pink-600 mt-0.5 shrink-0" />
+                    <BookOpen className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                     <span>Nêu những điểm bạn thích và không thích về cuốn sách</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <BookOpen className="h-4 w-4 text-pink-600 mt-0.5 shrink-0" />
+                    <BookOpen className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                     <span>Chia sẻ bài học hoặc thông điệp bạn nhận được từ cuốn sách</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <BookOpen className="h-4 w-4 text-pink-600 mt-0.5 shrink-0" />
+                    <BookOpen className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                     <span>Viết ít nhất 200 ký tự để hoàn thành thử thách</span>
                   </li>
                 </ul>
@@ -243,7 +243,7 @@ export default function WriteReviewPage() {
               Bạn đã nhận được 40 điểm thưởng cho việc hoàn thành thử thách này!
             </p>
             <DialogFooter className="sm:justify-center">
-              <Button type="button" onClick={handleCloseDialog} className="bg-pink-600 hover:bg-pink-700">
+              <Button type="button" onClick={handleCloseDialog} className="bg-green-600 hover:bg-green-700">
                 Quay lại trang thử thách
               </Button>
             </DialogFooter>

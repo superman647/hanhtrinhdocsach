@@ -47,11 +47,11 @@ export default function AchievementsPage() {
           <div className="space-y-6">
             <Card>
               <CardContent className="p-6">
-                <div className="relative w-full bg-gradient-to-r from-pink-50 to-purple-50 dark:from-pink-950 dark:to-purple-950 rounded-lg overflow-hidden border">
+                <div className="relative w-full bg-gradient-to-r from-green-50 to-purple-50 dark:from-green-950 dark:to-purple-950 rounded-lg overflow-hidden border">
                   <div className="p-8 flex flex-col items-center justify-center text-center">
                     <div className="w-full flex justify-between items-center mb-6">
                       <div className="flex items-center">
-                        <Award className="h-6 w-6 text-pink-600 mr-2" />
+                        <Award className="h-6 w-6 text-green-600 mr-2" />
                         <span className="font-bold">Vĩ Dạ Reading Challenges</span>
                       </div>
                       <div className="text-sm text-muted-foreground">Ngày cấp: {new Date().toLocaleDateString()}</div>
@@ -59,7 +59,7 @@ export default function AchievementsPage() {
 
                     <div className="mb-6">
                       <h1 className="text-3xl font-bold mb-2">GIẤY CHỨNG NHẬN</h1>
-                      <div className="w-16 h-1 bg-pink-600 mx-auto mb-4"></div>
+                      <div className="w-16 h-1 bg-green-600 mx-auto mb-4"></div>
                       <p className="text-lg">Chứng nhận</p>
                     </div>
 
@@ -84,8 +84,8 @@ export default function AchievementsPage() {
                     <div className="w-full flex justify-between items-center mt-6">
                       <div className="text-sm">ID: VD-{Math.floor(Math.random() * 10000)}</div>
                       <div className="flex items-center">
-                        <div className="h-12 w-12 rounded-full bg-pink-100 dark:bg-pink-900 flex items-center justify-center">
-                          <Award className="h-6 w-6 text-pink-600" />
+                        <div className="h-12 w-12 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
+                          <Award className="h-6 w-6 text-green-600" />
                         </div>
                       </div>
                     </div>
@@ -93,7 +93,7 @@ export default function AchievementsPage() {
                 </div>
 
                 <div className="flex justify-center mt-6 gap-4">
-                  <Button onClick={handleDownload} className="bg-pink-600 hover:bg-pink-700">
+                  <Button onClick={handleDownload} className="bg-green-600 hover:bg-green-700">
                     <Download className="mr-2 h-4 w-4" />
                     Tải giấy chứng nhận
                   </Button>
@@ -160,7 +160,7 @@ export default function AchievementsPage() {
                 <ul className="space-y-2">
                   {user.achievements.map((achievement, index) => (
                     <li key={index} className="flex items-start gap-2">
-                      <Award className="h-4 w-4 text-pink-600 mt-0.5 shrink-0" />
+                      <Award className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                       <span>{achievement}</span>
                     </li>
                   ))}

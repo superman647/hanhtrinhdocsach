@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "Hành trình đọc sách",
-  description: "Hành trình đọc sách - Cộng đồng đọc sách trực tuyến, Reading Race, Reading Chain và Góc Triển lãm Người đọc",
+  description: "Hành trình đọc sách - Khám phá văn học Việt Nam",
 }
 
 export default function RootLayout({

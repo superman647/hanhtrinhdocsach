@@ -92,10 +92,10 @@ export default function RegisterPage() {
             </Tabs>
           </CardContent>
           <CardFooter className="flex flex-col space-y-4">
-            <Button className="w-full bg-pink-600 hover:bg-pink-700">Đăng ký</Button>
+            <Button className="w-full bg-green-600 hover:bg-green-700">Đăng ký</Button>
             <div className="text-sm text-center text-muted-foreground">
               Đã có tài khoản?{" "}
-              <Link href="/login" className="text-pink-600 hover:underline">
+              <Link href="/login" className="text-green-600 hover:underline">
                 Đăng nhập
               </Link>
             </div>

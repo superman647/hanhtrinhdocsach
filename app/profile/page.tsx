@@ -95,35 +95,35 @@ export default function ProfilePage() {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center">
-                      <BookOpen className="h-5 w-5 text-pink-600 mr-2" />
+                      <BookOpen className="h-5 w-5 text-green-600 mr-2" />
                       <span>Sách đã đọc</span>
                     </div>
                     <span className="font-bold">{user.booksRead}</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center">
-                      <Award className="h-5 w-5 text-pink-600 mr-2" />
+                      <Award className="h-5 w-5 text-green-600 mr-2" />
                       <span>Thử thách hoàn thành</span>
                     </div>
                     <span className="font-bold">{user.challengesCompleted}</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center">
-                      <Calendar className="h-5 w-5 text-pink-600 mr-2" />
+                      <Calendar className="h-5 w-5 text-green-600 mr-2" />
                       <span>Ngày đọc liên tiếp</span>
                     </div>
                     <span className="font-bold">{user.streak}</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center">
-                      <Clock className="h-5 w-5 text-pink-600 mr-2" />
+                      <Clock className="h-5 w-5 text-green-600 mr-2" />
                       <span>Tổng thời gian đọc</span>
                     </div>
                     <span className="font-bold">{user.totalReadingTime}</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center">
-                      <Trophy className="h-5 w-5 text-pink-600 mr-2" />
+                      <Trophy className="h-5 w-5 text-green-600 mr-2" />
                       <span>Tổng điểm</span>
                     </div>
                     <span className="font-bold">{user.points}</span>
@@ -138,7 +138,7 @@ export default function ProfilePage() {
                 <CardDescription>Đọc sách mỗi ngày để nhận thêm điểm</CardDescription>
               </CardHeader>
               <CardContent className="p-6">
-                <Button className="w-full bg-pink-600 hover:bg-pink-700">Điểm danh</Button>
+                <Button className="w-full bg-green-600 hover:bg-green-700">Điểm danh</Button>
               </CardContent>
             </Card>
           </div>

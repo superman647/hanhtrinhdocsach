@@ -708,7 +708,7 @@ export default function BookCompletePage({ params }: { params: { id: string } })
               <Button onClick={resetQuiz} variant="outline">
                 Làm lại bài kiểm tra
               </Button>
-              <Button onClick={() => router.push(`/books/${bookId}`)} className="bg-pink-600 hover:bg-pink-700">
+              <Button onClick={() => router.push(`/books/${bookId}`)} className="bg-green-600 hover:bg-green-700">
                 <BookOpen className="mr-2 h-4 w-4" />
                 Quay lại trang sách
               </Button>
@@ -795,12 +795,12 @@ export default function BookCompletePage({ params }: { params: { id: string } })
               <Button
                 onClick={handleSubmit}
                 disabled={!selectedAnswer}
-                className="w-full bg-pink-600 hover:bg-pink-700"
+                className="w-full bg-green-600 hover:bg-green-700"
               >
                 Kiểm tra
               </Button>
             ) : (
-              <Button onClick={handleNext} className="w-full bg-pink-600 hover:bg-pink-700">
+              <Button onClick={handleNext} className="w-full bg-green-600 hover:bg-green-700">
                 {currentQuestion < questions.length - 1 ? "Câu tiếp theo" : "Xem kết quả"}
               </Button>
             )}

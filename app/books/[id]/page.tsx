@@ -768,7 +768,7 @@ export default function BookDetailPage({ params }: { params: { id: string } }) {
             </div>
             <div className="flex gap-2">
               <Link href={`/books/${book.id}/read`} className="flex-1">
-                <Button className="w-full bg-pink-600 hover:bg-pink-700">
+                <Button className="w-full bg-green-600 hover:bg-green-700">
                   <BookOpen className="h-4 w-4 mr-2" />
                   Đọc sách
                 </Button>
@@ -780,7 +780,7 @@ export default function BookDetailPage({ params }: { params: { id: string } }) {
                   <Star className="h-5 w-5 text-yellow-500 fill-yellow-500 mr-1" />
                   <span className="font-bold">{book.rating}/5</span>
                 </div>
-                <Badge className="bg-pink-600 hover:bg-pink-700">{book.category}</Badge>
+                <Badge className="bg-green-600 hover:bg-green-700">{book.category}</Badge>
               </div>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
@@ -806,7 +806,7 @@ export default function BookDetailPage({ params }: { params: { id: string } }) {
               {book.challenges.map((challenge) => (
                 <div key={challenge.id} className="flex items-center justify-between text-sm p-2 bg-muted rounded-md">
                   <div className="flex items-center">
-                    <Award className="h-4 w-4 text-pink-600 mr-2" />
+                    <Award className="h-4 w-4 text-green-600 mr-2" />
                     <span>{challenge.title}</span>
                   </div>
                   <Badge variant="outline">{challenge.points} điểm</Badge>

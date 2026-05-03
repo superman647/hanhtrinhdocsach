@@ -24,7 +24,7 @@ export default function SettingsPage() {
   const [notifications, setNotifications] = useState(true)
   const [emailNotifications, setEmailNotifications] = useState(true)
   const [readingReminders, setReadingReminders] = useState(true)
-  const [accentColor, setAccentColor] = useState("pink")
+  const [accentColor, setAccentColor] = useState("green")
   const [fontSize, setFontSize] = useState(16)
   const [lineSpacing, setLineSpacing] = useState(1.5)
 
@@ -132,7 +132,7 @@ export default function SettingsPage() {
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button onClick={handleSaveProfile} className="bg-pink-600 hover:bg-pink-700">
+                  <Button onClick={handleSaveProfile} className="bg-green-600 hover:bg-green-700">
                     Lưu thay đổi
                   </Button>
                 </CardFooter>
@@ -210,7 +210,7 @@ export default function SettingsPage() {
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button onClick={handleSavePreferences} className="bg-pink-600 hover:bg-pink-700">
+                  <Button onClick={handleSavePreferences} className="bg-green-600 hover:bg-green-700">
                     Lưu tùy chọn
                   </Button>
                 </CardFooter>
@@ -270,7 +270,7 @@ export default function SettingsPage() {
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button onClick={handleSaveNotifications} className="bg-pink-600 hover:bg-pink-700">
+                  <Button onClick={handleSaveNotifications} className="bg-green-600 hover:bg-green-700">
                     Lưu cài đặt
                   </Button>
                 </CardFooter>
@@ -304,7 +304,7 @@ export default function SettingsPage() {
                           <button
                             key={color}
                             className={`h-8 w-8 rounded-full bg-${color}-600 ${
-                              accentColor === color ? "ring-2 ring-offset-2 ring-offset-background ring-pink-600" : ""
+                              accentColor === color ? "ring-2 ring-offset-2 ring-offset-background ring-green-600" : ""
                             }`}
                             onClick={() => setAccentColor(color)}
                             aria-label={`Màu ${color}`}
@@ -345,7 +345,7 @@ export default function SettingsPage() {
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button onClick={handleSaveAppearance} className="bg-pink-600 hover:bg-pink-700">
+                  <Button onClick={handleSaveAppearance} className="bg-green-600 hover:bg-green-700">
                     Lưu cài đặt
                   </Button>
                 </CardFooter>
@@ -411,7 +411,7 @@ export default function SettingsPage() {
                 </CardContent>
                 <CardFooter className="flex justify-between">
                   <Button variant="outline">Đăng xuất khỏi tất cả thiết bị</Button>
-                  <Button className="bg-pink-600 hover:bg-pink-700">Cập nhật mật khẩu</Button>
+                  <Button className="bg-green-600 hover:bg-green-700">Cập nhật mật khẩu</Button>
                 </CardFooter>
               </Card>
             </TabsContent>

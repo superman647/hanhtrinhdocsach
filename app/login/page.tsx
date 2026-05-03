@@ -32,7 +32,7 @@ export default function LoginPage() {
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
                     <Label htmlFor="password">Mật khẩu</Label>
-                    <Link href="/forgot-password" className="text-xs text-pink-600 hover:underline">
+                    <Link href="/forgot-password" className="text-xs text-green-600 hover:underline">
                       Quên mật khẩu?
                     </Link>
                   </div>
@@ -60,10 +60,10 @@ export default function LoginPage() {
             </Tabs>
           </CardContent>
           <CardFooter className="flex flex-col space-y-4">
-            <Button className="w-full bg-pink-600 hover:bg-pink-700">Đăng nhập</Button>
+            <Button className="w-full bg-green-600 hover:bg-green-700">Đăng nhập</Button>
             <div className="text-sm text-center text-muted-foreground">
               Chưa có tài khoản?{" "}
-              <Link href="/register" className="text-pink-600 hover:underline">
+              <Link href="/register" className="text-green-600 hover:underline">
                 Đăng ký
               </Link>
             </div>

@@ -215,7 +215,7 @@ export default function BookReaderPage({ params }: { params: { id: string } }) {
               <ChevronLeft className="mr-2 h-4 w-4" /> Trang trước
             </Button>
 
-            <Button onClick={handleNextPage} className="bg-pink-600 hover:bg-pink-700">
+            <Button onClick={handleNextPage} className="bg-green-600 hover:bg-green-700">
               {currentPage === totalPages ? "Hoàn thành" : "Trang tiếp"} <ChevronRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
